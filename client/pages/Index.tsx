@@ -36,7 +36,7 @@ export default function Index() {
         <div className="absolute top-48 left-1/3 opacity-25 animate-pulse delay-2000">
           <Cloud className="w-10 h-10 text-melancholy-300" />
         </div>
-        
+
         {/* Stars */}
         {Array.from({ length: 12 }).map((_, i) => (
           <div
@@ -51,7 +51,7 @@ export default function Index() {
             <Star className="w-2 h-2 text-rain-200 fill-current" />
           </div>
         ))}
-        
+
         {/* Moon */}
         <div className="absolute top-16 right-16 opacity-60">
           <Moon className="w-20 h-20 text-rain-200 fill-current" />
@@ -63,7 +63,9 @@ export default function Index() {
         <div className="text-center max-w-4xl mx-auto">
           <div
             className={`transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
             }`}
           >
             {/* App Title */}
@@ -77,7 +79,7 @@ export default function Index() {
             </p>
 
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-rain-400 to-transparent mx-auto mb-12"></div>
-            
+
             {/* Quote Container */}
             <div className="h-32 flex items-center justify-center mb-16">
               <blockquote
@@ -97,7 +99,7 @@ export default function Index() {
                     Feel the Rain
                   </span>
                 </button>
-                
+
                 <button className="group px-8 py-3 bg-melancholy-700/30 border border-melancholy-500/50 rounded-full text-melancholy-200 hover:bg-melancholy-600/40 hover:border-melancholy-400/60 transition-all duration-300 backdrop-blur-sm">
                   <span className="flex items-center gap-2">
                     <Moon className="w-4 h-4" />
@@ -105,23 +107,25 @@ export default function Index() {
                   </span>
                 </button>
               </div>
-              
+
               {/* Mood Indicator */}
               <div className="flex justify-center items-center space-x-2 opacity-60">
                 <span className="text-sm text-rain-300">Current mood:</span>
                 <div className="flex space-x-1">
-                  {["melancholic", "contemplative", "nostalgic"].map((mood, index) => (
-                    <span
-                      key={mood}
-                      className={`px-2 py-1 rounded-full text-xs border ${
-                        index === 0
-                          ? "bg-rain-800/50 border-rain-500/50 text-rain-200"
-                          : "border-rain-600/30 text-rain-400"
-                      }`}
-                    >
-                      {mood}
-                    </span>
-                  ))}
+                  {["melancholic", "contemplative", "nostalgic"].map(
+                    (mood, index) => (
+                      <span
+                        key={mood}
+                        className={`px-2 py-1 rounded-full text-xs border ${
+                          index === 0
+                            ? "bg-rain-800/50 border-rain-500/50 text-rain-200"
+                            : "border-rain-600/30 text-rain-400"
+                        }`}
+                      >
+                        {mood}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
