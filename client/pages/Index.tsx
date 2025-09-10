@@ -67,10 +67,15 @@ export default function Index() {
             }`}
           >
             {/* App Title */}
-            <h1 className="text-6xl md:text-8xl font-thin text-rain-100 mb-8 tracking-wide">
+            <h1 className="text-6xl md:text-8xl font-thin text-rain-100 mb-4 tracking-wide">
               melancholia
             </h1>
-            
+
+            {/* Personal Greeting */}
+            <p className="text-2xl md:text-3xl text-rain-300 font-light mb-8">
+              hello Sid
+            </p>
+
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-rain-400 to-transparent mx-auto mb-12"></div>
             
             {/* Quote Container */}
