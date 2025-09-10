@@ -75,7 +75,7 @@ export default function Index() {
 
             {/* Personal Greeting */}
             <p className="text-2xl md:text-3xl text-rain-300 font-light mb-8">
-              hello Sid
+              hello world
             </p>
 
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-rain-400 to-transparent mx-auto mb-12"></div>
