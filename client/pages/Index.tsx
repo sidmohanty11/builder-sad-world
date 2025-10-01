@@ -201,13 +201,20 @@ export default function Index() {
                     Embrace the Dark
                   </span>
                 </button>
+
+                <button className="group px-8 py-3 bg-rain-700/30 border border-rain-500/50 rounded-full text-rain-200 hover:bg-rain-600/40 hover:border-rain-400/60 transition-all duration-300 backdrop-blur-sm">
+                  <span className="flex items-center gap-2">
+                    <Star className="w-4 h-4" />
+                    Chase the Stars
+                  </span>
+                </button>
               </div>
 
               {/* Mood Indicator */}
               <div className="flex justify-center items-center space-x-2 opacity-60">
                 <span className="text-sm text-rain-300">Current mood:</span>
                 <div className="flex space-x-1">
-                  {["melancholic", "contemplative", "nostalgic"].map(
+                  {["melancholic", "contemplative", "nostalgic", "dreamy"].map(
                     (mood, index) => (
                       <span
                         key={mood}
