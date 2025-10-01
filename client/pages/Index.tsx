@@ -173,7 +173,6 @@ export default function Index() {
               melancholia
             </h1>
 
-
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-rain-400 to-transparent mx-auto mb-12"></div>
 
             {/* Quote Container */}
